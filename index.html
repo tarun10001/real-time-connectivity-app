@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-time Connectivity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Real-time Connectivity</h1>
+      <div id="connection-status" class="status offline">
+        <span id="status-text">Offline</span>
+      </div>
+
+      <div id="error-page" class="hidden">
+        <div class="error-message">
+          <h2>Connection Error</h2>
+          <p id="error-details">
+            Failed to connect to the server. Please check your internet
+            connection and try again.
+          </p>
+        </div>
+      </div>
+
+      <div id="app-content">
+        <div class="message-container">
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type a message..."
+          />
+          <button id="send-button">Send</button>
+        </div>
+        <div id="messages"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
